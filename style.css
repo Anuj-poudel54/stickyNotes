@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    padding-inline: 2rem;
+    padding-block: 3rem;
+}
+
+.input-form {
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+
+    input,
+    button {
+        padding: .8rem;
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
+
+.notes-wrapper {
+    margin-block: 3rem;
+
+    .note {
+        position: absolute;
+        outline: 1px solid black;
+        min-height: 4rem;
+        padding: 1rem 2rem;
+        cursor: move;
+        user-select: none;
+        background-color: #bf9a7e;
+
+        img {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            transform: translate(-2px, -17px);
+        }
+    }
+}
